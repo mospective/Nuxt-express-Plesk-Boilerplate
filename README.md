@@ -32,11 +32,13 @@ https://nuxtjs.org/api/configuration-build/
 Link to deploying to plesk: https://raoulkramer.de/deploy-a-nuxt-js-application-on-a-plesk-onyx-v-server-as-node-js-application/
 
 Under Enable additional Deploy action: 
-
+``` bash
 $ /opt/plesk/node/12/bin/npm ci --scripts-prepend-node-path
 $ /opt/plesk/node/12/bin/npm run build --scripts-prepend-node-path
 $ touch tmp/restart.txt
-
+```
 If you get a node error, create .npmrc file with the following:
+``` bash
 $ scripts-prepend-node-path=true
+```
 Upload file to the root folder in plesk
