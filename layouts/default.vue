@@ -9,7 +9,7 @@
 import Navigation from '@/components/Navigation'
 import axios from 'axios'
 
-axios.defaults.headers.common['Authorization'] = 'Token 4ca8a55b05cbf104a14132489b465d16'
+axios.defaults.headers.common['Authorization'] = 'api key goes here'
 
 export default {
   components: {
