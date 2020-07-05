@@ -37,7 +37,7 @@ export default {
     Logo
   },
     asyncData ({ params, error }) {
-    return axios.get(`https://api.catsone.nl/v3/jobs/590216`,)
+    return axios.get(`api url`,)
       .then((res) => {
         return { job: res.data.description }
       })
